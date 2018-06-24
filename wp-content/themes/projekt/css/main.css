@@ -360,3 +360,34 @@ ol li:nth-child(odd) { background-color:#efefef; }
 .fa{
     color: #e3b23c;
 }
+
+/* gora */
+
+#bottom {
+    /*ANIMACJA PRZYCIKSU*/
+    -moz-transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    /*KONIEC ANIMACJI*/
+
+    width: 50px;
+    height: 60px;
+    position: fixed;
+    bottom: -5px;
+    right: 5px;
+    background: #8d2638;
+}
+#bottom:hover {
+    bottom: -1px;
+}
+
+.material-icons{
+    text-align: center;
+    color: white;
+}
+
+.material-icons:hover{
+    text-decoration: none;
+    text-transform: none;
+}

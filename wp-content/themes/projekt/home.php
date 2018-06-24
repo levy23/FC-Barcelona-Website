@@ -1,20 +1,19 @@
 <?php get_header(); ?>
-<?php
-/**
- * Created by PhpStorm.
- * User: kazikkoduje
- * Date: 04.04.18
- * Time: 12:07
- */
-?>
     <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <?php wp_head(); ?>
     </head>
-<body>
+<body id="scroll">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.localScroll();
+        });
+    </script>
+
     <section class="main-content">
         <div class="container">
             <div class="slider">
@@ -210,7 +209,11 @@
         </div>
 </section>
     </header>
+
+    <a id="bottom" href="#top" class="material-icons">&#xe5d8;</a>
 <?php wp_footer(); ?>
 
 
 <?php get_footer(); ?>
+
+
