@@ -1,0 +1,362 @@
+
+/aaa/
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.container {
+    margin:0 auto;
+    max-width:1140px;
+}
+
+.row {
+    margin-left:-15px;
+    margin-right:-15px;
+}
+
+.row .col-1-2 {
+    width: 50%;
+    float:left;
+    padding:0 15px;
+}
+
+.row .col-1-3 {
+    width: 33.3333%;
+    float:left;
+    padding:0 15px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    border-radius: 20px;
+    border: 1px solid #1c3054;
+    color: black;
+}
+
+.btn:hover {
+    background: #8d2b41;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    color: #1c3054;
+    background-color: white;
+    margin: 10px;
+    width: 180px;
+    padding: 5px;
+}
+
+/* -------------------------------------------- */
+/* page slider */
+/* -------------------------------------------- */
+
+.slider{
+    display: flex;
+}
+
+.score{
+    width: 300px;
+    height: 300px;
+}
+
+/* -------------------------------------------- */
+/* page header */
+/* -------------------------------------------- */
+.page-header {
+    background: #1c3054;
+    padding:10px 0;
+}
+.page-logo {
+    float:left;
+}
+.page-logo img {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+.page-nav {
+    float:right;
+}
+.page-nav li {
+    display: inline-block;
+}
+.page-nav a {
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 60px;
+    display: inline-block;
+    padding:0 10px;
+    font-weight: 700;
+    transition: 0.5s all;
+}
+.page-nav a:hover {
+    color: #8d2b41;
+}
+
+/* -------------------------------------------- */
+/* main content */
+/* -------------------------------------------- */
+.main-content {
+    padding:20px 0;
+}
+.main-content-title {
+    font-size:2rem;
+    font-weight: 400;
+    margin:1.5rem 0;
+    margin-top:0;
+    text-transform: uppercase;
+}
+.main-content-text {
+    color:#444;
+}
+
+/* -------------------------------------------- */
+/* main post */
+/* -------------------------------------------- */
+.main-post {
+    background: #641a2a;
+    padding:20px 0;
+}
+
+.news-post{
+    height: 250px;
+    width: 250px;
+}
+
+.posty{
+    width: 250px;
+    height: 250px;
+}
+
+.posty-title{
+    height: 250px;
+    width: 250px;
+    color: white;
+    background: black;
+    opacity: 0.4;
+}
+
+.posty-link{
+    display: flex;
+}
+
+.posty-link:hover{
+    background: white;
+    opacity: 0.4;
+    text-decoration: none;
+    text-transform: none;
+}
+
+/* -------------------------------------------- */
+/* page table */
+/* -------------------------------------------- */
+
+.table{
+    background-color: #efefef;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.table1{
+    height: 380px;
+    width: 250px;
+}
+
+.strzelcy{
+    height: 380px;
+    width: 350px;
+}
+
+.btn-tabele{
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    background-color: #641a2a;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.btn-tabele:hover{
+    background-color: #901e33;
+    text-transform: none;
+    text-decoration: none;
+    color: white;
+}
+
+/* -------------------------------------------- */
+/* page week */
+/* -------------------------------------------- */
+
+.week{
+    display: flex;
+    background-color: #1c3054;
+    height: 380px;
+}
+
+.cytat{
+    width: 400px;
+    color: white;
+}
+
+.picture1{
+    border: 1px solid white;
+}
+
+/* -------------------------------------------- */
+/* page footer */
+/* -------------------------------------------- */
+.page-footer {
+    background: #e3b23c;
+    padding:20px 0;
+}
+.page-footer .copyright {
+    float:left;
+    line-height: 60px;
+}
+.page-footer .page-footer-logo img {
+    width: 80px;
+    height: 80px;
+    float:right;
+}
+
+/* -------------------------------------------- */
+/* page tabele */
+/* -------------------------------------------- */
+
+.laliga{
+    margin: 0px;
+}
+
+.number{
+    background-color: turquoise;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.number3{
+    background-color: #901e33;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.number2{
+    font-size: 30px;
+    padding: 5px;
+}
+
+.table-laliga{
+    width: 100%;
+}
+
+.list{
+    display: flex;
+}
+
+.list1{
+    background-color: turquoise;
+    width: 10px;
+    height: 10px;
+}
+
+.list2{
+    background-color: #901e33;
+    width: 10px;
+    height: 10px;
+}
+
+/* strzelcy */
+
+.gole{
+    width: 100%;
+}
+
+.fcb{
+    color: #901e33;
+    font-size: 20px;
+}
+
+.terminarz{
+    text-align: center;
+    width: 100%;
+}
+
+.ter-color{
+    background-color: #efefef;
+}
+
+tr:nth-child(odd) { background-color:#efefef; }
+
+/*komnetarze*/
+
+#comments {
+    color: white;
+}
+
+ol li:nth-child(odd) { background-color:#efefef; }
+
+.comment-meta.commentmetadata a{
+    color: #901e33;
+}
+
+.reply a{
+    color: #901e33;
+}
+
+.logged-in-as a{
+    color: #901e33;
+}
+
+.submit{
+    color: white;
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    background-color: #641a2a;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 5px;
+}
+#respond{
+    background-color: #efefef;
+}
+
+.avatar{
+    border-radius: 15px;
+}
+
+/* wynik */
+
+.score{
+    text-align: center;
+}
+
+.score h3{
+    font-size: 45px;
+}
+
+.score p{
+    background-color: #8d2638;
+    color: white;
+}
+
+.data{
+    background-color: #efefef;
+    text-align: center;
+}
+
+.fa{
+    color: #e3b23c;
+}
