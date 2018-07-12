@@ -27,29 +27,33 @@
                         <i class="fa">&#xf1e3;</i>Presezon
                         <i class="fa">&#xf08d;</i>Rose Bowl, Pasadena
                     </div>
-
-
-                </div>
+                    <a>następny mecz za:</a>
+                    <span id="odliczanie"></span>
+                    <script type="text/javascript">
+                        k=+new Date(2018,06,30,0,00,00);
+                        (function(){sec=(k-new Date())/1000;
+                            document.getElementById('odliczanie').innerHTML=~~(sec/(3600*24))+' dni '+~~(sec/3600)%24+' godzin '+~~(sec/60)%60+' minut '+~~sec%60+' sekund';
+                            if(sec>0)setTimeout(arguments.callee,1000)})()
+                    </script>
+                    </div>
             </div>
         </div>
     </section><!-- e: main-content -->
 
     <section class="main-post">
         <div class="container">
+            <h1>Aktualności</h1>
             <div class="row">
             <?php
 
-            $q2 = new WP_Query([
-                'post_type' => 'post',
-                'posts_per_page' => 8,
-                'category_name' => 'news'
-
+            new WP_Query([
+                'category_name' => 'news',
             ])
 
 
             ?>
 
-                <?php if ( $q2->have_posts() ) : while ( $q2->have_posts() ) :    $q2->the_post(); ?>
+                <?php if ( have_posts() ) : while ( have_posts() ) :    the_post(); ?>
                     <!-- post -->
                         <a class="posty-link" href="<?php the_permalink()?>"
 
@@ -58,7 +62,7 @@
                             <?php the_post_thumbnail('medium', ['class' => 'news-post']); ?>
                             <div class="posty-title"><?php the_title(); ?></div>
 
-                    <?php wp_reset_postdata(); ?>
+
                 <?php endwhile; ?>
                     <!-- post navigation -->
                 <?php else: ?>
@@ -66,8 +70,13 @@
                 <?php endif; ?>
             </div>
             </div>
+
         </div>
         </a>
+        <div class="pagin">
+            <?php post_pagination(); ?>
+        </div>
+
 
     </section>
     <section class="table">
@@ -154,66 +163,24 @@
         <div class="row">
             <div class="cytat">
                 <h2>Cytat Tygodnia</h2>
-                <?php
-
-                $q2 = new WP_Query([
-                    'post_type' => 'post',
-                    'posts_per_page' => 1,
-                    'category_name' => 'cytat tygodnia'
-
-                ])
-
-
-                ?>
-
-                <?php if ( $q2->have_posts() ) : while ( $q2->have_posts() ) :    $q2->the_post(); ?>
-                <!-- post -->
-
-                <div class="picture2"><?php the_excerpt(); ?>
-                    <a href="<?php the_permalink();?>" class="btn-tabele">Czytaj</a>
-                    <?php wp_reset_postdata(); ?>
-                    <?php endwhile; ?>
-                    <!-- post navigation -->
-                    <?php else: ?>
-                        <!-- no posts found -->
-                    <?php endif; ?>
+                <p>Rozumiem, że klub, który przygarnął mnie w wieku 12 lat, zasługuje na moją najlepszą wersję, tak jak było do teraz, i wiem, że w najbliższej przyszłości nie mógłbym dawać z siebie maksimum na każdej płaszczyźnie, zarówno mentalnej, jak i fizycznej. Jeżeli wyobrażałbym sobie zakończenie kariery tutaj, stałoby się to właśnie w taki sposób. W momencie, gdy czuję się potrzebny, ważny, gdy jestem piłkarzem wyjściowego składu z szansami na zdobywanie trofeów i pozytywnymi odczuciami, które towarzyszyły mi w ciągu tego roku.</p>
                 </div>
-            </div>
             <div class="picture">
                 <h2>Zdjęcie tygodnia</h2>
-                <?php
-
-                $q2 = new WP_Query([
-                    'post_type' => 'post',
-                    'posts_per_page' => 1,
-                    'category_name' => 'zdjęcie tygodnia'
-
-                ])
-
-
-                ?>
-
-                <?php if ( $q2->have_posts() ) : while ( $q2->have_posts() ) :    $q2->the_post(); ?>
-                <!-- post -->
-
-                    <div class="picture1"><?php the_post_thumbnail('medium', ['class' => 'news-post']); ?>
-                    <?php wp_reset_postdata(); ?>
-                    <?php endwhile; ?>
-                    <!-- post navigation -->
-                    <?php else: ?>
-                        <!-- no posts found -->
-                    <?php endif; ?>
+                <img class="photo-week" src="<?php echo get_stylesheet_directory_uri(); ?>/img/iniesta.jpg" alt="iniesta"/>
                     </div>
                 </div>
-            </div>
-        </div>
+    </div>
 </section>
     </header>
 
     <a id="bottom" href="#top" class="material-icons">&#xe5d8;</a>
+
 <?php wp_footer(); ?>
 
 
 <?php get_footer(); ?>
+
+
 
 

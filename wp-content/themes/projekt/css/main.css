@@ -56,6 +56,10 @@ h2{
     padding: 5px;
 }
 
+h1{
+    text-align: center;
+}
+
 /* -------------------------------------------- */
 /* page slider */
 /* -------------------------------------------- */
@@ -391,3 +395,50 @@ ol li:nth-child(odd) { background-color:#efefef; }
     text-decoration: none;
     text-transform: none;
 }
+
+.czas{
+    background-color: #0A246A;
+}
+
+.kontakt{
+    background-color: black;
+}
+
+
+/*najwieksza rozdzielczosc laptopów*/
+@media only screen and (max-width: 1000px) {
+    .slider { display: block; }
+}
+
+/*średni telefon lub IPad*/
+@media only screen and (max-width: 680px) {
+    .slider { display: none; }
+    .news-post { width: 50%}
+    .posty-title { width: 50%}
+}
+
+.pagin{
+    text-align: center;
+}
+
+.pagin a{
+    color: white;
+}
+
+.pagin a:hover{
+    color: #0A246A;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.photo-week{
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+}
+
+.copyright .fa{
+    color: black;
+}
+
+
