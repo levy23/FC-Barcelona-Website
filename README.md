@@ -16,8 +16,8 @@ http://fcbarcafc.cba.pl
 
 #mobile:
 
-[![N|Solid](http://fcbarcafc.cba.pl/screen-mobile.png)](http://fcbarcafc.cba.pl)
+[![N|](http://fcbarcafc.cba.pl/screen-mobile.png)](http://fcbarcafc.cba.pl)
 
-[![N|Solid](http://fcbarcafc.cba.pl/screen-mobile2.png)](http://fcbarcafc.cba.pl)
+[![N|](http://fcbarcafc.cba.pl/screen-mobile2.png)](http://fcbarcafc.cba.pl)
 
 
