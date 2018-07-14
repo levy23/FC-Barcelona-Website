@@ -1,14 +1,11 @@
-# PROJEKT KOŃCOWY CODERS LAB
+# FINAL PROJECT CODERS LAB
 
-W pełni responsywna strona www poświęcona klubowi
-piłkarskiemu FC Barcelona. Zbiór najświeższych danych,
-statystyk i informacji klubowych. Strona edytowalna przez
-zarejestrowanych użytkowników.
+Fully responsive website dedicated FC Barcelona football club. Latest data, analysis, club statistics and informations are all collected here. Registered users are able to edit the website.
 
-# Wykorzystane technologie:
+Used technologies:
 html/CSS/LESS/Gulp/PHP/JavaScript/bootstrap/RWD
 
-# adres strony:
+# website adress:
 
 http://fcbarcafc.cba.pl
 
